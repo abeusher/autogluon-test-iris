@@ -1,6 +1,6 @@
 autogluon
 pandas
-scikit-learn>=1.5.0
+scikit-learn
 bokeh==2.0.1
 imodels
 
