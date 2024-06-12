@@ -4,8 +4,8 @@ from autogluon.tabular import TabularDataset, TabularPredictor
 # load two data sets:
 #  - "train_data" for training 
 #  -  "test_data" for testing
-train_data = TabularDataset('data/iris_train.csv')
-test_data = TabularDataset('data/iris_test.csv')
+train_data = TabularDataset('../data/iris_train.csv')
+test_data = TabularDataset('../data/iris_test.csv')
 
 # create a predictor object and fit it to the training data
 predictor = TabularPredictor(label='species').fit(train_data=train_data)
