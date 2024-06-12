@@ -1,5 +1,6 @@
 from autogluon.tabular import TabularDataset, TabularPredictor
 import pandas as pd
+import sys
 
 # load the model
 predictor = TabularPredictor.load('AutogluonModels/ag-20240612_132644')
@@ -10,6 +11,12 @@ predictor = TabularPredictor.load('AutogluonModels/ag-20240612_132644')
 test_data = TabularDataset('data/iris_test.csv')
 leaderboard = predictor.leaderboard(test_data)
 print(leaderboard)
+print()
+
+# Outout the feature importance
+feature_importance = predictor.feature_importance(test_data)
+print(feature_importance)
+print()
 
 """
 Lines 19-29 below test our model on a single data point.
@@ -32,5 +39,7 @@ row_df = pd.DataFrame([row], columns=columns)
 # predict the species of a single data point
 correct_answer = 'Iris-virginica'
 model_prediction= predictor.predict(row_df)
+print("Evaluating the model on a single data point from data/iris_test.csv")
+print("input values: %s" %(row_df.values[0]))
 print(f"The model predicted: {model_prediction[0]}")
 print(f"The correct answer is: {correct_answer}")
