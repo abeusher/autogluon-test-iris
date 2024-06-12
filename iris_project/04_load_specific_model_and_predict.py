@@ -6,17 +6,11 @@ import pandas as pd
 #predictor = TabularPredictor.load('AutogluonModels/ag-20240612_132644/RandomForestEntr')
 predictor = TabularPredictor.load('AutogluonModels/ag-20240612_155114')
 model_names = predictor.model_names()
-print("Model names: ", model_names)
+print("Models available: ", model_names)
 print()
 
 MODEL_TO_USE = "RandomForestGini"
 
-# print a summary of how well it works
-# results = predictor.fit_summary()
-
-test_data = TabularDataset('../data/iris_test.csv')
-leaderboard = predictor.leaderboard(test_data)
-print(leaderboard)
 
 """
 Lines 19-29 below test our model on a single data point.
@@ -24,7 +18,6 @@ This data point is from the file data/iris_test.csv line #26
 
 Here's the row, note that the correct prediction for species is 'Iris-virginica':
 7.9,3.8,6.4,2.0,Iris-virginica
-
 """
 
 # Define the column names as in the IRIS dataset
