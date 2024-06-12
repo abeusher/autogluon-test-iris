@@ -3,7 +3,7 @@ import pandas as pd
 
 
 # load the model
-predictor = TabularPredictor.load('AutogluonModels/ag-20240612_132644')
+predictor = TabularPredictor.load('AutogluonModels/ag-20240612_155114')
 
 # print a summary of how well it works
 # results = predictor.fit_summary()

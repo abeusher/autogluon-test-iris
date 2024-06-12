@@ -4,7 +4,7 @@ import pandas as pd
 
 # load the model
 #predictor = TabularPredictor.load('AutogluonModels/ag-20240612_132644/RandomForestEntr')
-predictor = TabularPredictor.load('AutogluonModels/ag-20240612_132644')
+predictor = TabularPredictor.load('AutogluonModels/ag-20240612_155114')
 model_names = predictor.model_names()
 print("Model names: ", model_names)
 print()
