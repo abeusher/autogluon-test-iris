@@ -12,7 +12,11 @@ predictor = TabularPredictor(label='species').fit(train_data=train_data)
 
 # make predictions on the test set
 #predictions = predictor.predict(test_data)
+#print(predictions)
 
-# evaluate the model
+# display the model's performance
+results = predictor.fit_summary()
+
+# show the model leaderboard
 leaderboard = predictor.leaderboard(test_data)
-print(leaderboard)
+#print(leaderboard)
