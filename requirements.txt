@@ -1,3 +1,4 @@
 autogluon
 pandas
 scikit-learn
+bokeh==2.0.1
