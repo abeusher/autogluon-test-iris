@@ -14,7 +14,7 @@ MODEL_TO_USE = "RandomForestGini"
 # print a summary of how well it works
 # results = predictor.fit_summary()
 
-test_data = TabularDataset('data/iris_test.csv')
+test_data = TabularDataset('../data/iris_test.csv')
 leaderboard = predictor.leaderboard(test_data)
 print(leaderboard)
 

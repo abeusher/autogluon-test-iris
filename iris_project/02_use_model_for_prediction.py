@@ -1,6 +1,6 @@
 from autogluon.tabular import TabularDataset, TabularPredictor
 import pandas as pd
-import sys
+
 
 # load the model
 predictor = TabularPredictor.load('AutogluonModels/ag-20240612_132644')
@@ -8,7 +8,7 @@ predictor = TabularPredictor.load('AutogluonModels/ag-20240612_132644')
 # print a summary of how well it works
 # results = predictor.fit_summary()
 
-test_data = TabularDataset('data/iris_test.csv')
+test_data = TabularDataset('../data/iris_test.csv')
 leaderboard = predictor.leaderboard(test_data)
 print(leaderboard)
 print()
