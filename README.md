@@ -21,7 +21,6 @@ See also: https://auto.gluon.ai/stable/install.html
 
 python3 -m pip install -r requirements.txt
 
-
 ## Description of files:
 
  - 01_make_train_and_test_data.py - splits input "IRIS.csv" into two separate files, one for training and one for testing
