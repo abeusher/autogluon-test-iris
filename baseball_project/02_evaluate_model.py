@@ -39,7 +39,7 @@ def main():
     print("Model Leaderboard:")
     print("************************************")
     print()
-    test_data = TabularDataset('../data/iris_test.csv')
+    test_data = TabularDataset('../data/raw_data_test.csv')
     leaderboard = predictor.leaderboard(test_data)
     print(leaderboard)
     print()
