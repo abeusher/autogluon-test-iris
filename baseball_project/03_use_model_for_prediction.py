@@ -23,7 +23,7 @@ def main():
     # print a summary of how well it works
     # results = predictor.fit_summary()
 
-    test_data = TabularDataset('../data/iris_test.csv')
+    test_data = TabularDataset('../data/raw_data_test.csv')
     leaderboard = predictor.leaderboard(test_data)
     print(leaderboard)
     print()
