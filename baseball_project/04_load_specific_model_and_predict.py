@@ -1,13 +1,9 @@
-from autogluon.tabular import TabularPredictor
+from autogluon.tabular import TabularDataset, TabularPredictor
 import pandas as pd
 import os
 
 #constants
 MODEL_TO_USE = "RandomForestGini"
-
-from autogluon.tabular import TabularDataset, TabularPredictor
-import pandas as pd
-import os
 
 def list_subdirectories(parent_dir, prefix='ag-2024'):
     """get a list of subdirectories in the parent directory that start with the prefix 'ag-2024' aka autogluon-2024"""
