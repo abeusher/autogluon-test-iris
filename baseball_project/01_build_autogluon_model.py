@@ -26,7 +26,7 @@ test_data = data.drop(train_data.index)
 predictor = TabularPredictor(label=target)
 
 # Train the model
-predictor.fit(train_data[features + [target]])
+predictor.fit(train_data[features + [target]], presets="medium_quality")
 
 # Evaluate the model
 performance = predictor.evaluate(test_data[features + [target]])
@@ -35,7 +35,6 @@ print("Model Performance: ", performance)
 # create a predictor object and fit it to the training data
 # see also: https://auto.gluon.ai/stable/tutorials/tabular/tabular-quick-start.html
 # see also: https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html
-predictor = TabularPredictor(label='species').fit(train_data=train_data, presets="medium_quality")
 
 print("AutoGluon infers problem type is: ", predictor.problem_type)
 print("AutoGluon identified the following types of features:")
