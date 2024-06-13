@@ -35,8 +35,7 @@ def main():
     print()
 
     # Define the column names as in the IRIS dataset
-    columns = ['Observation_ID', 'Y1=Pop 1', 'Y2=Pop 2', 'Y3=Pop 3', 'Y4=Pop 4', 'Y5=Pop 5', 'Y6= Pop 6', 
-           'X11', 'X12', 'X13', 'X14', 'X15', 'X21', 'X22', 'X23', 'X24', 'X25', 'X26', 'X31', 'X32', 
+    columns = ['Observation_ID', 'Y1=Pop 1',  'X11', 'X12', 'X13', 'X14', 'X15', 'X21', 'X22', 'X23', 'X24', 'X25', 'X26', 'X31', 'X32', 
            'X33', 'X34', 'X35', 'X36', 'X41', 'X42', 'X43', 'X44', 'X51', 'X52', 'X53', 'X54', 'X61', 
            'X62', 'X63', 'X64', 'X65', 'X66', 'X67', 'X71', 'X72', 'X73', 'X74', 'X81', 'X82', 'X83', 
            'X84', 'X85', 'X91', 'X92', 'X93', 'X94', 'X95', 'X96']
