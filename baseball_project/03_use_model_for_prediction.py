@@ -34,15 +34,6 @@ def main():
     print(feature_importance)
     print()
 
-    """
-    Lines 19-29 below test our model on a single data point.
-    This data point is from the file data/iris_test.csv line #26
-
-    Here's the row, note that the correct prediction for species is 'Iris-virginica':
-    7.9,3.8,6.4,2.0,Iris-virginica
-
-    """
-
     # Define the column names as in the IRIS dataset
     columns = ['Observation_ID', 'Y1=Pop 1', 'Y2=Pop 2', 'Y3=Pop 3', 'Y4=Pop 4', 'Y5=Pop 5', 'Y6= Pop 6', 
            'X11', 'X12', 'X13', 'X14', 'X15', 'X21', 'X22', 'X23', 'X24', 'X25', 'X26', 'X31', 'X32', 
